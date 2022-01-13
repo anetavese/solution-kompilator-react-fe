@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Custom css can go here*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  text-align: center;
+  width: 40%;
+}
+
+label {
+  display: block;
+  margin: 25px 0 2px;
+}
+
+/* Inputs */
+
+input {
+  max-width: 15rem;
+}
+
+.input_field,
+.about_field {
+  background-color: #f9f9f9;
+  border: 2px solid #e6e6e6;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.about_field {
+  border-radius: 15px;
+  height: 8rem;
+  width: 15rem;
+}
+
+.input_field:hover,
+.about_field:hover {
+  border-color: #c0e6e5;
+}
+
+.input_field:focus,
+.about_field:focus {
+  background-color: #ffffff;
+  outline-color: #c0e6e5;
+}
+
+.input_field:disabled,
+.about_field:disabled {
+  background-color: #fcfcfc;
+  border-color: #f2f2f2;
+}
+
+/* Dropdown */
+
+.dropdown {
+  color: #90969b;
+  width: 15rem;
+}
+
+/* Submit Button */
+.button {
+  display: flex;
+  padding: 10px;
+  font-weight: bold;
+  margin: 30px auto;
+  justify-content: center;
+  width: 100px;
+  background-color: #ef844e;
+  color: #ffffff;
+  width: 10rem;
+  border-radius: 45px;
+}
+
+.button:hover {
+  background-color: #bd693d;
+}
+
+.button:focus {
+  background-color: #bd693d;
+  outline-color: #dbdbdb;
+}
+
+.button:active {
+  background-color: #8a4c2c;
+}
+
+.button:disabled {
+  background-color: #f7c1a6;
+}
